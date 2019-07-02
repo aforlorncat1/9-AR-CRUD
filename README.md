@@ -9,7 +9,7 @@ There are different ways to solve this exercise so feel free to experiment!
 
 ### Create Table
 
-Try using the rake task `rake db:create_migration NAME=create_movies` to create
+Try using the rake task `rake db:new_migration[create_movies]` to create
 your migration file. Once you have a migration file add columns like so:
 
 |Column Name|Type|
@@ -21,7 +21,7 @@ your migration file. Once you have a migration file add columns like so:
 |`in_theaters`|\(boolean\)|
 
 After your migration is ready run `rake db:migrate` to
-migrate your table and `rake db:migrate SINATRA_ENV=test` to migrate a test
+migrate your table and `rake db:migrate` to migrate a test
 database.
 
 ### Tests
